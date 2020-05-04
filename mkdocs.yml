@@ -1,0 +1,47 @@
+site_name: Documentation Template
+site_description: Template for deploying docs using GitHub Pages and mkdocs.
+site_author: Kevin Kandlbinder
+site_url: https://doctemplate.kevink.dev
+
+repo_name: Unkn0wnCat/doctemplate
+repo_url: https://github.com/Unkn0wnCat/doctemplate
+
+copyright: CC-BY-4.0 Kevin Kandlbinder
+
+docs_dir: docs
+
+nav:
+  - Home: 
+    - index.md
+  - 'External Link':
+    - 'External Link': 'https://kevink.dev/'
+
+theme:
+  name: material
+  language: de
+  palette:
+    primary: deep orange
+    accent: deep orange
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - instant
+    - tabs
+
+plugins:
+  - search
+    
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/Unkn0wnCat
+      
+markdown_extensions:
+  - admonition
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - codehilite:
+      guess_lang: false
