@@ -13,6 +13,7 @@ docs_dir: docs
 nav:
   - Home: 
     - index.md
+    - demo.md
   - 'External Link':
     - 'External Link': 'https://kevink.dev/'
 
@@ -26,8 +27,8 @@ theme:
     text: Roboto
     code: Roboto Mono
   features:
-    - instant
-    - tabs
+    - navigation.instant
+    - navigation.tabs
 
 plugins:
   - search
@@ -38,10 +39,28 @@ extra:
       link: https://github.com/Unkn0wnCat
       
 markdown_extensions:
+  - abbr
+  - pymdownx.snippets
   - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.tabbed
   - footnotes
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.smartsymbols
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - meta
   - toc:
       permalink: true
-  - codehilite:
-      guess_lang: false
